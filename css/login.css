@@ -1,0 +1,143 @@
+.header-login {
+    min-height: 90px;
+    padding: 16px 6%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    background: rgba(14, 23, 34, 0.589);
+}
+
+.login {
+    display: flex;
+    align-items: stretch;
+    max-width: 1100px;
+    width: 90%;
+    margin: 20px auto;
+    background: #111827;
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+/* Imagem lateral */
+.img-left {
+    width: 50%;
+    display: flex;
+}
+
+.img-left img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* Área do formulário */
+.form-right {
+    width: 50%;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.form-right img {
+    width: 30%;
+}
+
+.form-right h2 {
+    margin: 0 0 12px;
+    color: #F8FAFC;
+    font-size: 26px;
+}
+
+.btn-login {
+    width: 100%;
+    border: 1px solid #3B82F6;
+    background: var(--cor-fundo-secundario);
+}
+
+/* Grupo de cada campo */
+.input-group {
+    position: relative;
+    width: 100%;
+    margin-bottom: 4px;
+}
+
+/* Input */
+.input-group input {
+    width: 100%;
+    padding: 16px 12px;
+    border: 1px solid #7a7a7a49;
+    border-radius: 6px;
+    background: var(--cor-fundo-secundario, #111827);
+    color: #F8FAFC;
+    font-size: 14px;
+    box-sizing: border-box;
+    outline: none;
+    transition: border-color 0.2s ease;
+}
+
+/* Placeholder nativo fica invisível */
+.input-group input::placeholder {
+    color: transparent;
+}
+
+/* Label inicialmente dentro do input */
+.input-group label {
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #94A3B8;
+    font-size: 14px;
+    padding: 0 4px;
+    background: var(--cor-fundo-secundario, #111827);
+    pointer-events: none;
+    transition: 0.2s ease;
+}
+
+/* Ao clicar no campo, o texto sobe */
+.input-group input:focus + label,
+.input-group input:not(:placeholder-shown) + label {
+    top: 0;
+    transform: translateY(-50%);
+    font-size: 12px;
+    color: #3B82F6;
+}
+
+/* Borda do campo focado */
+.input-group input:focus {
+    border-color: #3B82F6;
+}
+
+/* Transição suave ao sair do campo */
+.input-group input:not(:focus):not(:placeholder-shown) + label {
+    color: #94A3B8;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .login {
+        width: 92%;
+        flex-direction: column;
+        margin: 20px auto;
+        border: 1px solid #3B82F6;
+    }
+
+    .img-left img {
+        display: none;
+    }
+
+    .form-right {
+        width: 100%;
+        padding: 24px;
+        gap: 14px;
+    }
+
+    .form-right h2 {
+        font-size: 23px;
+    }
+}

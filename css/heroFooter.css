@@ -1,0 +1,132 @@
+.hero-footer {
+    position: relative;
+
+    min-height: 300px;
+    margin-top: 40px;
+    padding: 90px clamp(20px, 8%, 120px);
+
+    display: flex;
+    align-items: center;
+
+    overflow: hidden;
+
+    background-image:
+        linear-gradient(
+            to bottom,
+            transparent 50%,
+            rgba(17, 24, 39, 0.5) 75%,
+            #111827 100%
+        ),
+        url("../assets/images/footer.png");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+.hero-agroup {
+    width: 100%;
+    max-width: 900px;
+
+    display: flex;
+    align-items: center;
+    gap: 60px;
+
+    padding: 30px;
+
+    background: linear-gradient(
+        to right,
+        rgba(8, 7, 7, 0.85) 0%,
+        rgba(11, 15, 20, 0.7) 45%,
+        rgba(11, 15, 20, 0.3) 75%,
+        transparent 100%
+    );
+
+    border-radius: 10px;
+}
+
+
+.hero-footer-conteudo {
+    min-width: 0;
+    max-width: 300px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    color: var(--cor-texto);
+}
+
+
+.hero-footer-conteudo h2 {
+    line-height: 1.15;
+}
+
+
+.hero-footer-vantagens {
+    width: 100%;
+    max-width: 220px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+
+.hero-footer-vantagens span {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+
+.hero-footer-vantagens i {
+    flex-shrink: 0;
+
+    color: var(--cor-azul-hover);
+    font-size: 20px;
+}
+
+
+@media (max-width: 800px) {
+
+    .hero-footer {
+        min-height: auto;
+    }
+
+    .hero-agroup {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 30px;
+    }
+
+    .hero-footer-vantagens {
+        max-width: none;
+
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 20px;
+    }
+}
+
+
+@media (max-width: 550px) {
+
+    .hero-footer {
+        padding: 60px 5%;
+    }
+
+    .hero-agroup {
+        padding: 20px;
+    }
+
+    .hero-footer-vantagens {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+}

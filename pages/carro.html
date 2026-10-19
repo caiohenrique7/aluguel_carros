@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#0B0F14">
+    <meta name="description" content="Encontre o carro ideal para sua próxima viagem com a Car Horizon.">
+    <title>Car Horizon | Aluguel de Carros</title>
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+    <div class="inicio">
+
+        <header class="header-principal">
+            <div class="logo-header">
+                <a href="../index.html" aria-label="Car Horizon - Página inicial">
+                    <img src="../assets/images/logo/logoCH.png" alt="Car Horizon">
+                </a>
+            </div>
+
+            <nav class="nav-header" aria-label="Navegação principal">
+
+                <ul class="nav-links-header">
+                    <li class="nav-link"> <a href="index.html" aria-current="page">Início</a> </li>
+                    <li class="nav-link"> <a href="#carros">Carros</a> </li>
+                    <li class="nav-link"> <a href="#sobre">Sobre</a> </li>
+                    <li class="nav-link"> <a href="#ajuda">Ajuda</a> </li>
+                </ul>
+            </nav>
+
+            <div class="busca-entrar-header">
+                <div class="search-header">
+                    <button type="button" aria-label="Pesquisar">
+                        <i class="bi bi-search" aria-hidden="true"></i>
+                    </button>
+                </div>
+
+                <div class="linha-vert" aria-hidden="true"></div>
+
+                <div class="login-header">
+                    <a href="#" class="entrar-header">Entrar</a>
+                    <a href="#" class="cadastrar-header">Cadastrar</a>
+                </div>
+
+            </div>
+        </header>
+
+        <main>
+
+            <div class="container carro-anuncio mostrar"></div>
+
+            <template class="container" id="template-anuncio">
+
+                <div class="imagens-carro">
+                    <img class="imagem-carro" src="../assets/images/cars/corolla.jpg" alt="">
+                </div>
+
+                <div class="titulos-carro">
+
+                    <div class="titulos-carro-left">
+                        <h1 class="nome-carro-dest">Toyota Corolla</h1>
+                        <div class="atributos-carro">
+                            <span class="atributo-carro">
+                                <i class="bi bi-car-front"></i>
+                                Sedan
+                            </span>
+                            <span class="atributo-carro">
+                                <i class="bi bi-airplane-engines"></i>
+                                Automático
+                            </span>
+                            <span class="atributo-carro">
+                                <i class="bi bi-ev-front"></i>
+                                1.8
+                            </span>
+                        </div>
+                    </div>
+                    <h2 class="titulo-price">
+                        <span class="valor-diaria">R$ 149</span>
+                        <span class="titulo-price-small">/dia</span>
+                    </h2> 
+                </div>
+
+                <div class="carro-bottom">
+                    <div class="carro-bottom-left">
+                        <h3>Sobre o carro</h3>
+                        <p>O Toyota Corolla é a combinação perfeita entre conforto, economia
+                            e tecnologia. Ideal para viagens em familía ou para o dia a dia
+                            na cidade.
+                        </p>
+
+                        <div class="sobre-atributos">
+                            <div class="atributos-left">
+                                <span>
+                                    <i class="bi bi-people-fill"></i>
+                                    5 Lugares
+                                </span>
+                                <span>
+                                    <i class="bi bi-snow"></i>
+                                    Ar condicionado
+                                </span>
+                                <span>
+                                    <i class="bi bi-car-front"></i>
+                                    Direção elétrica
+                                </span>
+                            </div>
+
+                            <div class="atributos-right">
+                                <span>
+                                    <i class="bi bi-geo-alt"></i>
+                                    GPS
+                                </span>
+                                <span>
+                                    <i class="bi bi-bluetooth"></i>
+                                    Bluetooth
+                                </span>
+                                <span>
+                                    <i class="bi bi-camera-video"></i>
+                                    Câmera de ré
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carro-bottom-right">
+                        <h3>Reserve agora</h3>
+                        <div class="retirada">
+                            <label for="data-retirada">Retirada</label>
+                            <input type="date" id="data-retirada" name="retirada">
+                        </div>
+
+                        <div class="devolucao">
+                            <label for="data-devolucao">Devolução</label>
+                            <input type="date" id="data-devolucao" name="devolucao">
+                        </div>
+
+                        <div class="local">
+                            <label for="local-retirada">Local</label>
+                            <input type="text" id="local-retirada" name="local" placeholder="Cidade">
+                        </div>
+
+                        <button class="btn-hero">Continuar</button>
+                    </div>
+                </div>
+    </div>
+    </main>
+    </template>
+
+</body>
+<script type="module" src="../js/destaques.js"></script>
+
+</html>

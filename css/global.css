@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Arimo:wght@400;500;600;700&display=swap');
+@import "./header.css";
+@import "./hero.css";
+@import "./categorias.css";
+@import "./destaques.css";
+@import "./heroFooter.css";
+@import "./footer.css";
+@import "./carro.css";
+@import "./login.css";
+
+:root {
+    --cor-fundo: #0B0F14;
+    --cor-fundo-secundario: #111827;
+    --cor-azul: #2563EB;
+    --cor-azul-hover: #3B82F6;
+    --cor-texto: #F8FAFC;
+    --cor-texto-secundario: #94A3B8;
+    --cor-borda: #1E293B;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    min-width: 320px;
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+    font-family: "Arimo", sans-serif;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+button,
+input {
+    font: inherit;
+}
+
+button {
+    cursor: pointer;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+.container {
+    width: min(100% - 48px, 1280px);
+    margin-inline: auto;
+}
