@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#0B0F14">
+    <meta name="description" content="Encontre o carro ideal para sua próxima viagem com a Car Horizon.">
+
+    <title>Car Horizon | Categorias de carros</title>
+
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+    <div class="inicio">
+
+        <header class="header-principal">
+            <div class="logo-header">
+                <a href="../index.html" aria-label="Car Horizon - Página inicial">
+                    <img src="../assets/images/logo/logoCH.png" alt="Car Horizon">
+                </a>
+            </div>
+
+            <nav class="nav-header" aria-label="Navegação principal">
+                <ul class="nav-links-header">
+                    <li class="nav-link">
+                        <a href="../index.html">Início</a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="../index.html#carros">Carros</a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="../index.html#sobre">Sobre</a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="../index.html#ajuda">Ajuda</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="busca-entrar-header">
+                <div class="search-header">
+                    <button type="button" aria-label="Pesquisar">
+                        <i class="bi bi-search" aria-hidden="true"></i>
+                    </button>
+                </div>
+
+                <div class="linha-vert" aria-hidden="true"></div>
+
+                <div class="login-header">
+                    <a href="#" class="entrar-header">Entrar</a>
+                    <a href="#" class="cadastrar-header">Cadastrar</a>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <section class="categorias-pagina" id="categoria">
+                <div class="container">
+                    <div class="todosCarros-cima">
+                        <div class="todosCarros-cima-esq">
+                        <h2>Carros disponíveis</h2>
+                        <p>Encontre o veículo ideal para sua próxima viagem.</p>
+                        </div>
+                        <div class="categoria-botoes">
+                            <button id="catBotoes" data-categoria="economico">Econômico</button>
+                            <button id="catBotoes" data-categoria="compacto">Compacto</button>
+                            <button id="catBotoes" data-categoria="sedan">Sedan</button>
+                            <button id="catBotoes" data-categoria="suv">SUV</button>
+                            <button id="catBotoes" data-categoria="todos">Todos</button>
+                        </div>
+
+                        <div class="todosCarros-cima-pesq">
+                            <input type="text" name="" id="pesquisaCarros" placeholder="Buscar">
+                            <button id="buscarCarros"><i class="bi bi-search" aria-hidden="true"></i></button>
+                        </div>
+                    </div>
+
+
+                    <!-- Os cards serão inseridos aqui pelo JavaScript -->
+                    <div class="cards-destaques categoriasMostrar"></div>
+
+                    <!-- Modelo que o JavaScript vai copiar -->
+                    <template id="template-carro">
+                        <div class="card-destaque">
+
+                            <img class="imagem-carro" src="" alt="">
+
+                            <h3 class="nome-carro-cat"></h3>
+
+                            <span class="basic-info-car"></span>
+
+                            <div class="card-atributos">
+                                <span>
+                                    <i class="bi bi-people"></i>
+                                    <span class="lugares-carro"></span> Lugares
+                                </span>
+
+                                <span>
+                                    <i class="bi bi-snow"></i>
+                                    Ar Condicionado
+                                </span>
+
+                                <span>
+                                    <i class="bi bi-geo-alt"></i>
+                                    GPS
+                                </span>
+                            </div>
+
+                            <div class="card-price">
+                                <span class="price-destaque">
+                                    <span class="valor-carro"></span>
+                                    <span class="small-price">/dia</span>
+                                </span>
+
+                                <a href="./carro.html" class="btn-hero">
+                                    Reservar
+                                </a>
+                            </div>
+
+                        </div>
+                    </template>
+
+                </div>
+            </section>
+        </main>
+
+    </div>
+
+    <script type="module" src="../js/todosCarros.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,36 @@
+.todosCarros-cima {
+    display: flex;
+    justify-content: space-between;
+}
+
+.todosCarros-cima-pesq input {
+    background: var(--cor-fundo-secundario);
+    border: 1px solid var(--cor-azul);
+    border-radius: 7px;
+    height: 35px;
+    padding-left: 10px;
+    color: var(--cor-texto);
+}
+
+.todosCarros-cima-pesq button {
+    background: var(--cor-azul);
+    border: 1px solid var(--cor-fundo-secundario);
+    height: 35px;
+    border-radius: 7px;
+    min-width: 30px;
+    color: var(--cor-texto);
+}
+
+.categoria-botoes button {
+    background: var(--cor-fundo-secundario);
+    border: 1px solid var(--cor-azul);
+    border-radius: 7px;
+    height: 35px;
+    color: var(--cor-texto);
+    padding: 10px;
+    transition: 0.2s ease-in;
+}
+
+.categoria-botoes button:hover {
+    background: var(--cor-azul);
+}
