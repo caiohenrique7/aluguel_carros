@@ -17,6 +17,12 @@ export const carros = [
         nome: "Fiat Argo",
         categoria: "economico",
         imagem: "../assets/images/cars/argo.jpg",
+           imagens: [
+            "compass2.png",
+            "compass3.png",
+            "compass4.png",
+            "compass5.png"
+        ],
         precoDiaria: 80,
         lugares: 5,
         cambio: "Manual",
@@ -28,6 +34,12 @@ export const carros = [
         nome: "Chevrolet Onix",
         categoria: "economico",
         imagem: "../assets/images/cars/onix.jpg",
+           imagens: [
+            "compass2.png",
+            "compass3.png",
+            "compass4.png",
+            "compass5.png"
+        ],
         precoDiaria: 85,
         lugares: 5,
         cambio: "Manual",
@@ -39,6 +51,12 @@ export const carros = [
         nome: "Hyundai HB20",
         categoria: "economico",
         imagem: "../assets/images/cars/hb20.jpg",
+           imagens: [
+            "compass2.png",
+            "compass3.png",
+            "compass4.png",
+            "compass5.png"
+        ],
         precoDiaria: 85,
         lugares: 5,
         cambio: "Manual",
@@ -50,6 +68,12 @@ export const carros = [
         nome: "Volkswagen Polo",
         categoria: "compacto",
         imagem: "../assets/images/cars/polo.png",
+           imagens: [
+            "compass2.png",
+            "compass3.png",
+            "compass4.png",
+            "compass5.png"
+        ],
         precoDiaria: 95,
         lugares: 5,
         cambio: "Automático",
@@ -61,6 +85,12 @@ export const carros = [
         nome: "Toyota Yaris",
         categoria: "compacto",
         imagem: "../assets/images/cars/yaris.jpg",
+           imagens: [
+            "compass2.png",
+            "compass3.png",
+            "compass4.png",
+            "compass5.png"
+        ],
         precoDiaria: 105,
         lugares: 5,
         cambio: "Automático",
@@ -72,6 +102,12 @@ export const carros = [
         nome: "Toyota Corolla",
         categoria: "sedan",
         imagem: "../assets/images/cars/corolla.jpg",
+           imagens: [
+            "compass2.png",
+            "compass3.png",
+            "compass4.png",
+            "compass5.png"
+        ],
         precoDiaria: 149,
         lugares: 5,
         cambio: "Automático",
@@ -83,6 +119,12 @@ export const carros = [
         nome: "Honda City",
         categoria: "sedan",
         imagem: "../assets/images/cars/city.jpg",
+           imagens: [
+            "compass2.png",
+            "compass3.png",
+            "compass4.png",
+            "compass5.png"
+        ],
         precoDiaria: 130,
         lugares: 5,
         cambio: "Automático",
@@ -94,6 +136,12 @@ export const carros = [
         nome: "Chevrolet Tracker",
         categoria: "suv",
         imagem: "../assets/images/cars/tracker.jpg",
+           imagens: [
+            "compass2.png",
+            "compass3.png",
+            "compass4.png",
+            "compass5.png"
+        ],
         precoDiaria: 140,
         lugares: 5,
         cambio: "Automático",
@@ -105,6 +153,12 @@ export const carros = [
         nome: "Jeep Renegade",
         categoria: "suv",
         imagem: "../assets/images/cars/renegade.jpg",
+           imagens: [
+            "compass2.png",
+            "compass3.png",
+            "compass4.png",
+            "compass5.png"
+        ],
         precoDiaria: 145,
         lugares: 5,
         cambio: "Automático",
@@ -115,12 +169,70 @@ export const carros = [
         id: 10,
         nome: "Jeep Compass",
         categoria: "suv",
-        imagem: "../assets/images/cars/compass.jpg",
+        imagem: "../assets/images/cars/compass1.png",
+        imagens: [
+            "compass2.png",
+            "compass3.png",
+            "compass4.png",
+            "compass5.png"
+        ],
         precoDiaria: 180,
         lugares: 5,
         cambio: "Automático",
         malas: 4,
         combustivel: "Flex"
+    }
+];
+
+export const grupos = [
+    {
+        id: 1,
+        nome: "Grupo C",
+        descricao: "Econômico com ar",
+        modelos: "GM Onix Joy 1.0, VW Gol 1.0 ou similar",
+        precoDiaria: 149,
+        imagens: [
+            "GOLC.png",
+            "ONIXx.png"
+        ]
+    },
+    {
+        id: 2,
+        nome: "Grupo CE",
+        descricao: "Econômico Especial C/ar",
+        modelos: "Hyundai HB20, Fiat Argo, VW Polo ou similar",
+        precoDiaria: 179,
+        imagens: [
+            "HB2X.png",
+            "POLA.png",
+            "ARGO.png",
+            "PEUC.png",
+            "CTC3.png"
+        ]
+    },
+    {
+        id: 3,
+        nome: "Grupo CS",
+        descricao: "Econômico Sedan com ar",
+        modelos: "Hyundai HB20S, GM Onix Plus, Fiat Cronos ou similar",
+        precoDiaria: 149,
+        imagens: [
+            "HB2C (1).png",
+            "ONIXPLUS.png",
+            "CRONOS.png"
+        ]
+    },
+    {
+        id: 4,
+        nome: "Grupo G",
+        descricao: "SUV Manual",
+        modelos: "VW Tera, Citroen Basalt 1.0, Fiat Pulse 1.3 ou similar",
+        precoDiaria: 209,
+        imagens: [
+            "TERA.png",
+            "BASALT.png",
+            "PULSE.png"
+        ]
     }
 ];
 

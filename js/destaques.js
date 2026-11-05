@@ -37,12 +37,15 @@ document.addEventListener("DOMContentLoaded", () => {
         return;
     }
 
+
     // Cria uma cópia do template
     const copia = template.content.cloneNode(true);
 
     // Preenche os dados
-    copia.querySelector(".imagens-carro img").src = carroEscolhido.imagem;
+
+    copia.querySelector(".imagens-carro img").src = imagens[0];
     copia.querySelector(".imagens-carro img").alt = carroEscolhido.nome;
+
 
     copia.querySelector(".nome-carro-dest").textContent =
         carroEscolhido.nome;
@@ -57,4 +60,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Insere o anúncio na página
     mostrar.appendChild(copia);
+
+
 });
